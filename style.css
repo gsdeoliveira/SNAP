@@ -200,6 +200,10 @@ ul li a {
         font-size: 40%;
     }
 
+    .topo {
+        font-size: 4rem;
+    }
+
     #maincontent {
         flex-direction: column-reverse;
     }
@@ -251,6 +255,10 @@ ul li a {
 
     #container {
         height: 60%;
+    }
+
+    #container-textos button {
+        width: 40%;
     }
 
     #container-img {
