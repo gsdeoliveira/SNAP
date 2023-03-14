@@ -130,6 +130,7 @@ ul li a {
 #maincontent {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 2.0rem;
     padding: 2rem 5rem;
     height: calc(100% - 15rem);
@@ -207,10 +208,9 @@ ul li a {
         font-size: 40%;
     }
 
-  
-
     #maincontent {
         flex-direction: column-reverse;
+        width: 90%;
     }
 
     #container {
@@ -219,19 +219,23 @@ ul li a {
     }
 
     #container-textos {
-        width: 100%;
+        width: 90%;
         padding: 2rem;
     }
 
+    #container-clients img {
+        width: 10rem;
+    }
+
     #container-textos h1 {
-        font-size: 10rem;
+        font-size: 8rem;
         text-align: center;
     }
 
     #container-textos p {
         text-align: center;
-        width: 95%;
-        font-size: 4rem;
+        width: 90%;
+        font-size: 3rem;
     }
 
     #container-textos button {
@@ -242,7 +246,7 @@ ul li a {
     }
 
     #container-img {
-        width: 100%;
+        width: 90%;
         height: 60%;
         background-image: url(images/image-hero-mobile.png);
         background-size: contain;
