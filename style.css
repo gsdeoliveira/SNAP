@@ -206,11 +206,14 @@ ul li a {
 @media (max-width: 920px) { 
     body, html {
         font-size: 40%;
+        display: flex;
+        flex-direction: column;
     }
 
     #maincontent {
         flex-direction: column-reverse;
-        width: 90%;
+        width: 100%;
+        padding: 0;
     }
 
     #container {
@@ -220,7 +223,6 @@ ul li a {
 
     #container-textos {
         width: 90%;
-        padding: 2rem;
     }
 
     #container-clients img {
@@ -230,11 +232,12 @@ ul li a {
     #container-textos h1 {
         font-size: 8rem;
         text-align: center;
+        margin-top: 5rem;
     }
 
     #container-textos p {
         text-align: center;
-        width: 90%;
+        width: 100%;
         font-size: 3rem;
     }
 
@@ -246,12 +249,11 @@ ul li a {
     }
 
     #container-img {
-        width: 90%;
+        width: 100%;
         height: 60%;
         background-image: url(images/image-hero-mobile.png);
         background-size: contain;
         background-position: center;
-        margin-bottom: 5rem;
     }
  }
 
@@ -282,7 +284,7 @@ ul li a {
 
     #container-textos button {
         width: 40%;
-        margin: 5rem auto;
+        margin: 3rem auto;
     }
 
     #container-img {
