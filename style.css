@@ -22,11 +22,18 @@ body, html {
     font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 5rem;
+    align-items: center;
+}
+
+#logo {
+    height: 3.2rem;
 }
 
 .mainnav {
     display: flex;
+    align-items: center;
+
 }
 
 .mainnav img {
@@ -200,9 +207,7 @@ ul li a {
         font-size: 40%;
     }
 
-    .topo {
-        font-size: 4rem;
-    }
+  
 
     #maincontent {
         flex-direction: column-reverse;
@@ -253,12 +258,27 @@ ul li a {
         font-size: 30%;
     }
 
+    #logo {
+        width: auto;
+    }
+
+    ul {
+        display: none;
+    }
+    
+    #dropdown-icon {
+        background-image: url(images/icon-menu.svg);
+        width: 32px;
+        height: 18px;
+    }
+
     #container {
         height: 60%;
     }
 
     #container-textos button {
         width: 40%;
+        margin: 5rem auto;
     }
 
     #container-img {
