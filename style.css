@@ -1,0 +1,214 @@
+:root {
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+    --ArrowFeatures: url(images/icon-arrow-down.svg);
+    --ArrowCompany: url(images/icon-arrow-down.svg);
+}
+
+body, html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Epilogue', sans-serif;
+    color: var(--AlmostBlack);
+    background-color: var(--AlmostWhite);
+}
+
+
+
+.topo {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.mainnav {
+    display: flex;
+}
+
+.mainnav img {
+    width: 8.4rem;
+    height: 2.7rem;
+    margin-right: 3rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    color: var(--MediumGray);
+}
+
+ul li {
+    padding: 0 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+ul li a:hover {
+    color: var(--AlmostBlack);
+}
+
+ul li a {
+    color: var(--MediumGray);
+    text-decoration: none;
+}
+
+#features:after {
+    background-image: var(--ArrowFeatures);
+}
+
+#company:after {
+    background-image: var(--ArrowCompany);
+
+}
+
+#features:after, #company:after {
+    content: "";
+    background-size: cover;
+    width: 1rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0.5rem;
+    right: -0.1rem;
+ }
+
+
+#features ul {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+#features ul li {
+    padding: 1rem 3rem;
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+#company ul {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+#company ul li {
+    padding: 1rem 3rem;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#register {
+    border: 1.8px solid var(--AlmostWhite);
+    padding: 1rem;
+}
+
+#register:hover {
+    border: 1.8px solid var(--AlmostBlack);
+    border-radius: 1.5rem;
+
+}
+
+#maincontent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.0rem;
+    padding: 2rem 5rem;
+    height: calc(100% - 15rem);
+}
+
+#container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#container-textos {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-around;
+}
+
+#maincontent h1 {
+    width: 100%;
+    font-size: 7rem;
+    margin: 0 0 2rem 0;
+}
+
+#maincontent p {
+
+    width: 80%;
+    font-size: 1.8rem;
+}
+
+#maincontent button {
+    background-color: var(--AlmostBlack);
+    color: var(--AlmostWhite);
+    border: 1px solid #000;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: 30%;
+}
+
+#maincontent button:hover {
+    color: var(--AlmostBlack);
+    background-color: var(--AlmostWhite);
+}
+
+#container-clients {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+#container-clients img {
+    padding: 0 1rem;
+}
+
+#container-img {
+    background-image: url(images/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+
+@media (max-width: 920px) { 
+    body, html {
+        font-size: 40%;
+    }
+
+    #maincontent {
+        flex-direction: column-reverse;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    #container-img {
+        width: 100%;
+    }
+ }
