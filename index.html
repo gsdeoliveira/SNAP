@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    <header class="topo">
+
+    <header class="topo" id="topo">
         <nav class="mainnav">
             <img src="images/logo.svg" id="logo" alt="Logo da SNAP">
-            <ul>
+            <ul id="lista-container">
                 <li id="features" class="dropdown">
                     <a href="#" class="features">Features</a>
                     <ul id="features-menu">
@@ -64,7 +65,58 @@
                 </li>
             </ul>
         </nav>
-        <div id="dropdown-icon"></div>
+        <div id="menudropdown">
+            <img src="images/icon-menu.svg" alt="" id="menu-burger-icon">
+            <g fill="#151515" fill-rule="evenodd">
+                <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+            </g>
+            </svg>
+            <div id="burger-menu" style="display: none;">
+                <ul>
+                    <li id="burger-features"><a href="#">Features</a>
+                        <ul id="burger-features-menu">
+                            <li>
+                                <img src="images/icon-todo.svg" alt=""
+                                    style="width: auto; height: 14px; margin: 0px 5px;">
+                                <a href="#">Todo List</a>
+                            </li>
+                            <li>
+                                <img src="images/icon-calendar.svg" alt=""
+                                    style="width: auto; height: 14px; margin: 0px 5px;">
+                                <a href="#">Calendar</a>
+                            </li>
+                            <li>
+                                <img src="images/icon-reminders.svg" alt=""
+                                    style="width: auto; height: 14px; margin: 0px 5px;">
+                                <a href="#">Reminders</a>
+                            </li>
+                            <li>
+                                <img src="images/icon-planning.svg" alt=""
+                                    style="width: auto; height: 14px; margin: 0px 5px;">
+                                <a href="#">Planning</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="burger-company"><a href="#">Company</a>
+                        <ul id="burger-company-menu">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul id="burger-login-register">
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li id="burger-register">
+                        <a href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <ul>
             <li>
                 <a href="#">Login</a>
@@ -79,7 +131,8 @@
         <div id="container">
             <div id="container-textos">
                 <h1>Make remote work</h1>
-                <p>Get your team in sync, no matter you location. Streamline processes, create team rituals, and watch
+                <p>Get your team in sync, no matter you location. Streamline processes, create team rituals, and
+                    watch
                     productivity soar.</p>
                 <button>Learn more</button>
             </div>
@@ -93,6 +146,7 @@
         <div id="container-img">
         </div>
     </main>
+    </div>
 
 
     <script src="script.js"></script>
