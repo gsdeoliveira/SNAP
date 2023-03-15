@@ -17,6 +17,8 @@ document.addEventListener('mouseup', e => {
         company_menu.style.display = 'none'
         burger_menu.style.display = 'none'
         menu_burger_icon.src = 'images/icon-menu.svg'
+        document.documentElement.style.setProperty('--ArrowFeatures', 'url(images/icon-arrow-down.svg)')
+        document.documentElement.style.setProperty('--ArrowCompany', 'url(images/icon-arrow-down.svg)')
 
     }
 })
