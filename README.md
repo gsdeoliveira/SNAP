@@ -1,4 +1,4 @@
 # SNAP
 
-link: https://gsdeoliveira.github.io/SNAP/
+link: https://gsdeoliveira.github.io/SNAP/  
 Projeto FrontendMentor
