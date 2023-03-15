@@ -18,6 +18,11 @@ body, html {
     background-color: var(--AlmostWhite);
 }
 
+body {
+    max-width: 136rem;
+    min-height: 100vh;
+    margin-inline: auto;
+}
 
 
 .topo {
@@ -202,7 +207,8 @@ ul li a {
     background-image: url(images/image-hero-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 40%;
+    width: 48rem;
+    max-width: 90vw;
     height: 100%;
     display: flex;
     justify-content: center;
